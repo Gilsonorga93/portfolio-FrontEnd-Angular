@@ -1,0 +1,12 @@
+.row{
+    padding: 20px;
+    background-color: rgba(34, 34, 34, 1);
+
+}
+
+#edit{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
