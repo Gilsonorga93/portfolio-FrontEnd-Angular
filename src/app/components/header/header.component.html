@@ -1,23 +1,22 @@
 <nav class="navbar navbar-expand navbar-dark bg-dark px-2">
     
-    <div class="side-nav-button p-2 me-3 text-light" 
-        (click)="SideNavToggle()"
-    >
-        <i class="fa-solid fa-bars"></i>
-    </div>
-
-    <a href="#" class="navbar-brand px-4">PORTFOLIO</a>
-
     <div class="navbar-collapse">
         <ul class="navbar-nav me-auto">
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
-                    Menu1
+                    Menu
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a href="" class="dropdown-item">Child 1</a></li>
-                    <li><a href="" class="dropdown-item">Child 2</a></li>
-                    <li><a href="" class="dropdown-item">Child 3</a></li>
+                    <li class="nav-list-item" 
+                    *ngFor="let item of list"
+                >
+        
+                    <i class="{{item.icon}}"></i>
+                    <span>
+                        <a href="#">{{item.name}}</a>
+                    </span>
+                    
+                </li>
                 </ul>
             </li>
         </ul>

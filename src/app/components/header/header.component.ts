@@ -7,17 +7,39 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Output() sideNavToggled = new EventEmitter<boolean>();
-  menuStatus: boolean = false;
+
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  SideNavToggle(){
-    this.menuStatus = !this.menuStatus;
-    this.sideNavToggled.emit(this.menuStatus);
-  }
+  list = [
+    {
+      number: '1',
+      name: 'Inicio',
+      icon: 'fa-solid fa-house'
+    },
+    {
+      number: '2',
+      name: 'Experiencia',
+      icon: 'fa-solid fa-address-card'
+    },
+    {
+      number: '3',
+      name: 'Educacion',
+      icon: 'fa-solid fa-graduation-cap'
+    },
+    {
+      number: '4',
+      name: 'Contacto',
+      icon: 'fa-solid fa-envelope'
+    },
+    {
+    number: '5',
+    name: 'Configuracion',
+    icon: 'fa-solid fa-gear'
+    }
+  ]
 
 }
