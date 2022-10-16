@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark px-2">
+    
+    <div class="side-nav-button p-2 me-3 text-light" 
+        (click)="SideNavToggle()"
+    >
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <a href="#" class="navbar-brand px-4">PORTFOLIO</a>
+
+    <div class="navbar-collapse">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                    Menu1
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a href="" class="dropdown-item">Child 1</a></li>
+                    <li><a href="" class="dropdown-item">Child 2</a></li>
+                    <li><a href="" class="dropdown-item">Child 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="side-nav-button me-3">
+        <ul class="navbar-nav mb-0 ">
+          <li class="nav-item">
+            <a class="nav-link active" href="https://www.linkedin.com/in/gilson-ortiz-garcia-2a8761217/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+          </li>
+        </ul>
+    </div>
+
+    <div class="profile-logo dropstart">
+        <button class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">
+            Gilson
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a href="#" class="dropdown-item">Log In</a></li>
+            <li><a href="#" class="dropdown-item">Your Profile</a></li>
+            <li><a href="#" class="dropdown-item">Log Out</a></li>
+        </ul>
+    </div>
+</nav>
