@@ -1,0 +1,31 @@
+.row{
+    padding: 20px;
+    background-color: rgba(34, 34, 34, 1);
+}
+
+label{
+    color: aliceblue;
+}
+
+#agregar{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+form{
+    margin-top: 10px;
+    margin-left: 20px;
+    list-style: none;
+}
+
+li{
+    margin-left: 30px;
+    
+}

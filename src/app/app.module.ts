@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
-import { ExperiencesComponent } from './components/experience/experiences/experiences.component';
-import { ExpButtonComponent } from './components/experience/exp-button/exp-button.component';
+import { ExperiencesComponent } from './components/experiences/experiences.component';
+import { MyExpComponent } from './my-exp/my-exp.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +14,12 @@ import { ExpButtonComponent } from './components/experience/exp-button/exp-butto
     HeaderComponent,
     AboutMeComponent,
     ExperiencesComponent,
-    ExpButtonComponent,
+    MyExpComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

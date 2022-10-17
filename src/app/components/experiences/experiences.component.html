@@ -1,0 +1,54 @@
+<div class="container-lg mt-3"> 
+
+    <div class="row">
+     
+      <h2 class="text-white fs-4">Experiencia</h2>
+
+      <div class="container">
+        <div class="row">
+          <div class="card mt-3" *ngFor="let experiencia of experiencias; let i = index">
+          <app-my-exp [experiencia]="experiencia" [posicion]="i"  
+                      (activarEdicion)="editarExperience($event)"
+          >
+          </app-my-exp>
+        </div>
+        </div>
+      </div>
+   
+      <div class="container">
+        <div class="row">
+          <div class="add-experience mt-2" id="agregar">
+            <button type="button" class="btn btn-outline-light" (click)="mostrarNuevoFormulario()">Agregar</button>
+          </div>
+          <div id="formulario" *ngIf="nuevo == true">
+            <form #nuevaExperiencia="ngForm" class="form-group">
+              <li>
+                <label>Puesto:</label>
+                <input type="text" name="cajaNuevoPuesto" #cajaNuevoPuesto class="form-control-sm">
+              </li>
+              <li>
+                <label>Empresa: </label>
+                <input type="text" name="cajaNuevoEmpresa" #cajaNuevoEmpresa class="form-control-sm">
+              </li>
+              <li>
+                <label>Fecha de Inicio: </label>
+                <input type="text" name="cajaNuevoFechaInicio" #cajaNuevoFechaInicio class="form-control-sm">
+              </li>
+              <li>
+                <label>Fecha de Finalizacion: </label>
+                <input type="text" name="cajaNuevoFechaFin" #cajaNuevoFechaFin class="form-control-sm">
+              </li>
+              <button class="btn btn-outline-light mx-2" (click)="crearExperiencia()">Añadir</button>
+              <button (click)="cancelarNuevo()" class="btn btn-danger">Cancelar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+  
+    
+  </div>
+
+  </div>

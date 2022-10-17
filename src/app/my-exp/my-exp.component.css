@@ -1,0 +1,16 @@
+.card-body{
+    background-color: rgba(34, 34, 34, 1);
+}
+
+p{
+    color: aliceblue;
+    font-size: 80%;
+}
+
+h5{
+    color: aliceblue;
+}
+
+.btn{
+    margin-right: 10px;
+}
